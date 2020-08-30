@@ -2,7 +2,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url('./assets/layout_facebook_150421_1-1.jpg');
+  /* background: url('./assets/layout_facebook_150421_1-1.jpg'); */
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -10,15 +10,19 @@ body {
 }
 
 #currency-list {
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
   list-style-type: none;
   background: white;
   padding: 0;
-  width: 300px;
+  justify-content: space-evenly;
 }
 
 li {
-  padding: 10px 0;
+  /* min-width: 70px; */
+  padding: 30px;
+  margin: 20px;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -32,7 +36,7 @@ li:nth-child(even) {
   text-align: center;
 }
 
-.main-section {
+.input-section {
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -40,12 +44,12 @@ li:nth-child(even) {
   text-align: center;
 }
 
-.main-section label {
+.input-section label {
   background-color: #65d9fe;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.main-section input {
+.input-section input {
   height: 30px;
   border: none;
   border-radius: 3px;
@@ -54,11 +58,17 @@ li:nth-child(even) {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.main-section button {
+.input-section button {
   border: none;
   border-radius: 3px;
   height: 30px;
   background-color: rgb(255, 255, 15);
   font-weight: 800;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.currency-board {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
 }

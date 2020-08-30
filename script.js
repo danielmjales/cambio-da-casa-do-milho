@@ -76,7 +76,10 @@ const renderRate = (key, value) => {
   const formattedValue = value.toFixed(2);
 
   const li = document.createElement('li');
-  li.innerHTML = `<b>${key}:</b> ${formattedValue} <img src="./assets/trash.png">`;
+  li.innerHTML = `<div class="currency-card">
+      <h2>${key}</h2>
+      <h4>${value.toFixed(2)}</h4>
+    </div>`;
   li.addEventListener('click', handleItemListClick);
 
   currencyList.appendChild(li);
